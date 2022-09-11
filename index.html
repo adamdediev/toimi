@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/fonts/font.css">
+    <link rel="stylesheet" href="assets/media.css">
+    <title>Toimi</title>
+</head>
+<body>
+    <header class="header" >
+     <div class="logo"><a href="#">LOGO</a></div>
+     <nav class="nav">
+        <ul class="menu_list">
+            <li class="item">Проекты</li>
+            <li class="item">О компании</li>
+            <li class="item">Контакты</li>
+        </ul>
+     </nav>
+     <div class="next">
+     <div class="language display_see">
+        <input type="radio"  name="lang"><label for="rus"><span onclick="langeage_choose()" id="rus" class="active_1 choose">RU</span></label>
+        <input type="radio"  name="lang"><label for="eng"><span  onclick="langeage_choose_2()" id="eng" class="possible">EN</span></label>
+     </div>
+    <div class="start_project"><span>Начать проект </span><a href="#"><img src="assets/img/next_start.png" alt=""></a></div>
+    <div class="main_menu_block none">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    </div>
+    </header>
+    <main>
+        <div class="main_menu_block">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container">
+       <div class="transition"><span>Главная </span>-<span> Контакты</span></div>
+        <div class="text">
+        <div class="text_title">Мы рядом</div>
+        <div class="text_text">Заполните форму ниже и мы свяжемся с вами. Не любите формы? Напишите нам на почту <span>info@site.com</span></div>
+        </div>
+
+     <div class="input_animated">
+    <div class="input_box">
+    <div class="input_name_email">
+        <div class="input_name flex">
+            <input type="text" id="input" >
+            <label for="input">Ваше имя<span>*</span></label>
+        </div>
+        <div class="input_email flex">
+            <label for="input_2">Ваш E-Mail<span>*</span></label>
+            <input type="text" id="input_2" >
+        </div>
+    </div>
+    <div class="input_comment flex">
+        <label for="input_3">Комментарий<span>*</span></label>
+        <input type="text" id="input_3" >
+        
+    </div>
+     <div class="agreement"><label class="label_flex" for="agreement">
+        <input class="agreeement_input" type="checkbox" id="agreement">
+        <div class="fake_checkbox"></div>
+        <label class="left" for="agreement"> Согласен с <span> Политикой конфиденциальности</span></label></label>
+     </div>
+     
+    </div>
+    <input type="checkbox" id="circle"><label for="circle">
+    
+    <div id="animated" class="animated_circle" onclick="airplay()">
+    </div>
+</label>
+     </div>
+    </div>
+
+    </main>
+    <footer class="footer_background">
+            <div class="footer_cont">
+                <div class="footer_flex">
+             <div class="footer_logo">toimi</div>
+             <div class="footer_info">
+                <div class="services">
+                 <ul class="footer_text">
+                    <li>Услуги</li>
+                    <li>Support and development</li>
+                    <li>UI/UX and product design</li>
+                    <li>Progressive Web <br/>Applications (PWA)</li>
+                 </ul>
+                </div>
+                <div class="company">
+                    <ul class="footer_text">
+                        <li>Компания</li>
+                        <li>О компании</li>
+                        <li>Проекты</li>
+                        <li>Контакты</li>
+                     </ul>  
+                </div>
+                <div class="contact">
+                    <ul class="footer_text">
+                        <li>Контакты</li>
+                        <li class="footer_download">Скачать презентацию</li>
+                        <li id="number">+7 (499) 999-99-99</li>
+                        <li>info@site.com</li>
+                     </ul>
+                
+                
+            </div>
+            <div class="masseng">
+                <span class="Telegram"></span>
+                <span class="WhatsApp"></span>
+            </div>
+             </div>
+            </div>
+
+            <div class="footer_info_compony">
+                <span>© Company 2022. All rights reserved.</span>
+                <span>Политика конфиденциальночти</span>
+            </div>
+
+            </div>
+    </footer>
+</body>
+
+<script>
+  
+let animated = document.getElementById("animated");
+let language_rus = document.getElementById("rus");
+let language_eng = document.getElementById("eng");
+
+function langeage_choose_2(){
+    if(language_rus.classList.contains("choose")){
+        language_rus.classList.remove("choose")
+        language_eng.classList.add("choose")
+    }
+    else{
+        language_eng.classList.add("choose")
+        language_rus.classList.remove("choose")
+    }
+}
+function langeage_choose(){
+    if(language_eng.classList.contains("choose")){
+        language_eng.classList.remove("choose")
+        language_rus.classList.add("choose")
+    }
+    else{
+        language_rus.classList.add("choose")
+        language_eng.classList.remove("choose")
+    }
+}
+
+
+function airplay(){
+    animated.classList.add("active")
+}
+
+</script>
+</html>

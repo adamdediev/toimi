@@ -1,0 +1,135 @@
+@media (max-width: 1837px) {
+    .start_project::after {
+       left: 60%;
+    }
+}
+
+@media (max-width: 1672px) {
+   
+.footer_flex {
+        flex-direction: column;
+    }
+.footer_info{
+    margin-left: 0px;
+    justify-content: space-between;
+    max-width: 850px;
+    margin-top: 64px;
+    margin-bottom: 7%;
+  }
+
+}
+@media (max-width: 1354px) {
+.main_menu_block {
+        display: none;
+    }
+.footer_flex {
+        flex-direction: column;
+    }
+.footer_info{
+    margin-left: 0px;
+  }
+
+}
+@media (max-width: 1200px) {
+    .container{
+        max-width: 90%;
+    }
+    .input_animated{
+        flex-direction: column;
+    }
+    .animated_circle{
+        margin-top: 62px;
+    }
+    .footer_cont {
+        max-width: 90%;
+    }
+    }
+
+@media (max-width: 922px) {
+    .start_project::after {
+       left: 60%;
+    }
+    .nav{
+        display: none;
+    }
+    
+}
+@media (max-width: 782px) {
+    .start_project::after {
+       left: 60%;
+    }
+    .nav{
+        display: none;
+    }
+    .input_name_email{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input_email {
+        width: 332px;
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+    .input_name>input{
+        width: 332px;
+    }
+    #input_3{
+        width: 332px;
+    }
+    .input_box{
+        width: 100%;
+    }
+    .footer_cont {
+        max-width: 95%;
+    }
+    .footer_info{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 596px) {
+    .none{
+        margin-left: -40px;
+        display: flex;
+    }
+    .start_project{
+        display: none;
+    }
+    .display_see{
+        display: none;
+    }
+    .text_text{
+        width: 370px;
+    }
+    .footer_info {
+        flex-direction: column;
+        position: relative;
+    }
+    .company{
+        margin: 50px 0;
+    }
+    .footer_cont {
+        max-width: 90%;
+    }
+    .masseng {
+        position: absolute;
+        top: 465px;
+        left: 274px;
+    }
+    .footer_info_compony{
+        flex-direction: column-reverse;
+    }
+    .footer_info_compony>span:nth-child(1){
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 440px) {
+    .fake_checkbox{
+        width: 31px;
+       height: 28px;
+    }
+    
+}
+
+
+
